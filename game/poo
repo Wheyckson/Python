@@ -1,0 +1,73 @@
+from random import randint
+
+print("ADIVINHE O NUMERO\n")
+g=int(input("Qual o nivel: 1 facil - 2 médio - 3 dificil: "))
+
+if g == 1:
+    n=int(randint(1,10))
+    p= 0
+    t= 0
+
+    print("ADIVINHE O NUMERO (facil - 1 a 10)\n")
+
+    while p != n:
+        p= int(input("Seu palpite: "))
+        t+= 1
+
+        if p == n:
+            print("ACERTOU ! Placar %i" %t)
+
+        elif p < n:
+            print("Chute um valor maior")
+
+        else:
+            print("Chute um valor menor")
+
+    print ("\nFIM DO JOGO")
+pass
+
+if g == 2:
+    n=int(randint(1,50))
+    p= 0
+    t= 0
+
+    print("ADIVINHE O NUMERO (médio - 1 a 50)\n")
+
+    while p != n:
+        p= int(input("Seu palpite: "))
+        t+= 1
+
+        if p == n:
+            print("ACERTOU ! Placar %i" %t)
+
+        elif p < n:
+            print("Chute um valor maior")
+
+        else:
+            print("Chute um valor menor")
+
+    print ("\nFIM DO JOGO")
+pass
+
+if g == 3:
+    n=int(randint(1,100))
+    p= 0
+    t= 0
+
+    print("ADIVINHE O NUMERO (díficil - 1 a 100)\n")
+
+    while p != n:
+        p= int(input("Seu palpite: "))
+        t+= 1
+
+        if p == n:
+            print("ACERTOU ! Placar %i" %t)
+
+        elif p < n:
+            print("Chute um valor maior")
+
+        else:
+            print("Chute um valor menor")
+
+    print ("\nFIM DO JOGO")
+pass
